@@ -24,7 +24,6 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            cd /home/ubuntu
             python3 -m venv venv
             . venv/bin/activate
             make install
@@ -40,7 +39,7 @@ jobs:
       - run:
           name: run lint
           command: |
-            cd /home/ubuntu
+            
             . venv/bin/activate
             pwd
             make lint
